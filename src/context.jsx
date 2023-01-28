@@ -29,7 +29,7 @@ const AppProvider = ({ children }) => {
 	};
 	useEffect(() => {
 		let moviesTimeOut = setTimeout(() => {
-			getMovies(`${API_URL} &s=${search}`);
+			getMovies(`${API_URL}&s=${search}`);
 		}, 500);
 		return () => {
 			clearTimeout(moviesTimeOut);
