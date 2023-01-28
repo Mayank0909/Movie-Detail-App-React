@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export const API_URL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_NAME}`;
+export const API_URL = `http://www.omdbapi.com/?apikey=d71f6d7a`;
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
