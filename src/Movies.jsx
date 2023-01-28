@@ -9,11 +9,11 @@ const Movies = () => {
 			<section className="movie-page">
 				<div className="container grid grid-4-col">
 					{movie.map((curMovie) => {
-						const { imdbId, Title, Poster, Year, Type } = curMovie;
+						const { imdbID, Title, Poster, Year, Type } = curMovie;
 						const movieName = Title.substring(0, 15);
 						return (
 							<>
-								<NavLink to={`movie/ ${imdbId}`}>
+								<NavLink to={`movie/${imdbID}`}>
 									<div className="card">
 										<div className="card-info">
 											<h3>

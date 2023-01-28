@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const API_URL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_NAME}`;
+export const API_URL = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_NAME}`;
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [movie, setMovie] = useState([]);
 	const [isError, setIsError] = useState({ show: false, msg: "" });
-	const [search, setSearch] = useState("harry");
+	const [search, setSearch] = useState("");
 
 	const getMovies = async (url) => {
 		try {

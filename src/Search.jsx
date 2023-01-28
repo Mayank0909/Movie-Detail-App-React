@@ -7,6 +7,7 @@ const Search = () => {
 		<>
 			<div className="search-section">
 				<h1>Movie Information App</h1>
+				<h2>Search Your Fevorite Movie Here 👇</h2>
 				<input
 					type="text"
 					placeholder="Search"

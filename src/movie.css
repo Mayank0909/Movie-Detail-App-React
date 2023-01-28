@@ -24,7 +24,6 @@ body {
 h2 {
 	font-family: "Lora", serif;
 	color: var(--text-clr);
-	font-size: 2rem;
 	transition: all 0.5s linear;
 }
 
@@ -41,7 +40,6 @@ img {
 	transition: all 0.3s linear;
 }
 
-/* resuable code  */
 .container {
 	max-width: 140rem;
 	margin: auto;
@@ -49,7 +47,6 @@ img {
 }
 
 .grid {
-	/* width: 100%; */
 	display: grid;
 	gap: 3rem;
 }
@@ -62,16 +59,12 @@ img {
 	width: 25rem;
 	max-width: 30rem;
 	min-height: 30rem;
-	/* background-color: #fafaff; */
-	/* padding: 2rem; */
 	border-radius: 1rem;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-/* search css  */
 .search-section {
 	margin: auto;
 	text-align: center;
@@ -97,8 +90,6 @@ input {
 	margin-top: 1rem;
 	font-size: 1.8rem;
 }
-
-/* Single Movie css code  */
 
 .movie-section {
 	width: 100%;
