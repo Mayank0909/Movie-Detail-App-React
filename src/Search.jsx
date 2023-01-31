@@ -6,8 +6,9 @@ const Search = () => {
 	return (
 		<>
 			<div className="search-section">
-				<h1>Movie Information App</h1>
-				<h2>Search Your Fevorite Movie Here 👇</h2>
+				<div className="m">
+					<h1>Movie Information App</h1>
+				</div>
 				<input
 					type="text"
 					placeholder="Search"
@@ -16,6 +17,8 @@ const Search = () => {
 						return setSearch(e.target.value);
 					}}
 				/>
+				<h2>Search Your Fevorite Movie Here 👆</h2>
+
 				<div className="card-error">
 					<p>{isError.show && isError.msg}</p>
 				</div>
